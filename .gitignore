@@ -1,0 +1,58 @@
+﻿# Private configuration and credentials
+.env
+.env.*
+!.env.example
+config.local.php
+secrets.php
+
+# User-uploaded profile pictures
+resources/profileImg/*
+!resources/profileImg/.gitkeep
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Backups and database exports
+*.zip
+*.bak
+*.sql
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+
+# Dependencies
+vendor/
+
+# Private application configuration
+privateConfig.php
+
+# Historical security backups
+*-before-*.php
+*-before-*.js
+
+# Temporary upload tests
+upload-test.*
+
+# Temporary verification scripts
+verify*.php
+
+# Local GitHub preparation backups
+.gitignore-before-github-*.bak
+
+# Runtime product uploads
+resources/ProductImg/*
+!resources/ProductImg/.gitkeep
+
+# Keep profile-upload protection rules while excluding uploaded photos
+!resources/profileImg/.htaccess
+
+# Publish the reviewed database structure only
+!database/schema.sql

@@ -1,0 +1,15 @@
+# Prevent execution of scripts in the profile image upload directory.
+Options -Indexes
+
+# Disable PHP execution.
+<FilesMatch "\.(?i:php|php[0-9]?|phtml|phar|cgi|pl|py|sh)$">
+    Require all denied
+</FilesMatch>
+
+# Prevent access to hidden files.
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>
+
+# Disable content negotiation.
+Options -MultiViews
